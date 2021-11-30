@@ -8,17 +8,20 @@
 }
 
 .c-navigationHeader__logo{
+
     width: 140px;
     height: 60px;
     text-align: left;
 }
 
 .c-navigationHeader__liste{
+
     height: 100%;
     text-align: center;
 }
 
 .c-navigationHeader__lien {
+
     display: inline-block;
     line-height: 70px;
     font-size: 25px;
@@ -27,11 +30,13 @@
 }
 
 .c-navigationHeader__lien a{
+
     text-decoration: none;
     color: $dominant;
 }
 
 .c-navigationHeader__interaction{
+    
     height: 100%;
     text-align: right;
 }

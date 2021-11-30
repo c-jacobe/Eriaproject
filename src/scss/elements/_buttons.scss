@@ -1,0 +1,77 @@
+.btn-full{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.01rem;
+    text-align: center;
+    padding: 20px 50px;
+    color: $lightgray;
+    border: none;
+}
+.btn-full_green{
+    background-color: $lightgreen;
+    &:hover{
+        color: $lightgreen;
+        background: none;
+        border: double $lightgreen 8px;
+        padding: 12px 42px;
+    }
+}
+.btn-full_purple{
+    background-color: $tonic;
+    &:hover{
+        color: $tonic;
+        background: none;
+        border: double $tonic 8px;
+        padding: 12px 42px;
+    }
+}
+.btn-double{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.01rem;
+    text-align: center;
+    padding: 12px 42px;
+    border: double 8px;
+}
+.btn-double_green{
+    color: $lightgreen;
+    border-color: $lightgreen;
+    &:hover{
+        background-color: $lightgreen;
+        color: $lightgray;
+        border: none;
+        padding: 20px 50px;
+    }
+}
+.btn-double_purple{
+    color: $tonic;
+    border-color: $tonic;
+    &:hover{
+        background-color: $tonic;
+        color: $lightgray;
+        border: none;
+        padding: 20px 50px;
+    }
+}
+.btn-disabled_green{
+    background-color: $disabledgreen;
+}
+.btn-disabled_purple{
+    background-color: $disabledpurple;
+}
+.btn-white{
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.01rem;
+    text-align: center;
+    padding: 17px 47px;
+    color: $lightgray;
+    border: 3px solid $lightgray;
+    &:hover{
+        border: none;
+        color: $dominant;
+        background: $lightgray;
+        padding: 20px 50px;
+    }
+}

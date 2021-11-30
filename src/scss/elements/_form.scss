@@ -6,8 +6,29 @@
     &:focus-visible{
         outline: none;
     }
+    &::placeholder{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $dominant;
+    }
 }
-.checkbox{
+.c-input_white {
+    border: none;
+    border-bottom: solid 2px $lightgray;
+    color: $dominant;
+    padding: 2px;
+    &:focus-visible{
+        outline: none;
+    }
+    &::placeholder{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        color: $lightgray;
+    }
+}
+.c-checkbox_box{
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -29,7 +50,7 @@
     }
 }
 }
-.checkbox_white{
+.c-checkbox_whitebox{
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -53,6 +74,95 @@
 }
 }
 
+.c-checkbox{
+    display: flex;
+    align-items: center;
+}
+.c-checkbox_whitelabel{
+    color: $lightgray;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
 .c-checkbox_label{
+    color: $dominant;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    
+}
+.c-select{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	height: 1rem;
+    border: none; 
+	margin: 0;
+	padding: .75em;
+	border-radius: 0;
+	
 
+	overflow: hidden;
+	text-overflow: ellipsis;
+&:focus-visible{
+    outline: none;
+}
+}
+.c-select_container{
+    display: flex;
+    position: relative;
+    border-bottom: 2px $dominant solid;
+    width: fit-content;
+
+&::after{
+    content: "";
+    border-color: transparent;
+    border-top-color: $dominant;
+    border-width: 6px;
+    border-style: double;
+    pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    max-width: 0px;
+}
+}
+.c-select_containerwhite{
+    display: flex;
+    position: relative;
+    border-bottom: 2px $lightgray solid;
+    width: fit-content;
+
+&::after{
+    content: "";
+    
+    border-color: transparent;
+    border-top-color: $lightgray;
+    border-width: 6px;
+    border-style: double;
+    pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    max-width: 0px;
+}
+}
+.c-select_white{
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	height: 1rem;
+    border: none; 
+	margin: 0;
+	padding: .75em;
+	border-radius: 0;
+	
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+&:focus-visible{
+    outline: none;
+}
 }

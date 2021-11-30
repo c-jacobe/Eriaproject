@@ -18,6 +18,7 @@
     border-bottom: solid 2px $lightgray;
     color: $dominant;
     padding: 2px;
+    background-color: $dominant;
     &:focus-visible{
         outline: none;
     }
@@ -78,6 +79,11 @@
     display: flex;
     align-items: center;
 }
+.c-checkbox_white{
+    background-color: $dominant;
+    display: flex;
+    align-items: center;
+}
 .c-checkbox_whitelabel{
     color: $lightgray;
     font-family: "Open Sans", sans-serif;
@@ -96,11 +102,14 @@
 	-moz-appearance: none;
 	appearance: none;
 	
-	height: 1rem;
+	
     border: none; 
-	margin: 0;
-	padding: .75em;
+	padding: 0 0.75em;
 	border-radius: 0;
+    color: $dominant;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    
 	
 
 	overflow: hidden;
@@ -114,6 +123,7 @@
     position: relative;
     border-bottom: 2px $dominant solid;
     width: fit-content;
+    padding-right: 0;
 
 &::after{
     content: "";
@@ -133,6 +143,8 @@
     position: relative;
     border-bottom: 2px $lightgray solid;
     width: fit-content;
+    padding-right: 0;
+    background: $dominant;
 
 &::after{
     content: "";
@@ -153,12 +165,13 @@
 	-moz-appearance: none;
 	appearance: none;
 	
-	height: 1rem;
     border: none; 
-	margin: 0;
-	padding: .75em;
+	padding: 0 0.75em;
 	border-radius: 0;
-	
+    color: $lightgray;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+	background-color: $dominant;
 
 	overflow: hidden;
 	text-overflow: ellipsis;

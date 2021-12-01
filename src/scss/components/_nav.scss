@@ -2,12 +2,78 @@
 
     width: 100%;
     height: 100px;
-    background-color: $lightgray;
+
+}
+
+.c-navigationHeader__contenu{
+    width: 100%;
+    height: 100px;
+    background-color: $dominant;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-family: $fontMenu;
+    color: $lightgray;
     
 }
+
+ul li {
+    display: inline;
+    text-align: center;
+}
+
+label, #toggle
+{
+    display: none;
+}
+ 
+@media screen and (max-width: 900px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .c-navigationHeader__contenu
+    {
+        display: none;
+        flex-direction: column;
+        background: #48435C;
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .c-navigationHeader__contenu {
+        display: flex;
+    }
+}
+
+.btn-toggle-container {
+    position: flex;
+    display: none;
+    margin-right: 80px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    width: 90px;
+    height: 60px;
+  }
+
 .c-navigationHeader__logoBox{
     display: flex;
     text-align: center;
@@ -37,18 +103,20 @@
 .c-navigationHeader__lien {
 
     display: inline-block;
-    line-height: 70px;
+    line-height: 20px;
     font-size: 25px;
     margin: 0 10px;
     cursor: pointer;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: -5.5px;
+
 }
 
 .c-navigationHeader__lien a{
 
     text-decoration: none;
-    color: $dominant;
+    color: $lightgray;
 }
 
 .c-navigationHeader__interaction{
@@ -66,4 +134,31 @@
     height: 60px;
 }
 
+
+li a {
+    text-decoration:none;
+    line-height: 80px;
+    padding: 0px;
+    text-align: center;
+    font-size: 0.9em;
+    color: $lightgray;
+    text-transform: uppercase;
+}
+li a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 10px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+  width: 100%;
+  background: $lightgray;
+}
+
+.change-ma-couleur {
+    fill:$dominant;
+}
 

@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//db.onlinewebfonts.com/c/990b8e1c538920cb96da804bc5ffb443?family=Tourmaline+Bold" rel="stylesheet" type="text/css"/>
+    
+    <link href="//db.onlinewebfonts.com/c/ded1c8c3658b5243adb487ba97f8f7e0?family=Tourmaline" rel="stylesheet" type="text/css"/>
     
     <!--<link rel="stylesheet" type="text/css" href="./style.css">-->
    <link rel="stylesheet" type="text/css" href="dist/css/utils/main.css">
+
    <title>ERIA</title>
 </head>
 <body>
     <nav class="c-navigationHeader">
-        <div class="c-navigationHeader__logoBox">
-            <div class="c-navigationHeader__logoContainer">
-                <img src="assets/img/logo.svg" alt="logo menu" class="c-navigationHeader__logoImg">
+
+        <label for="toggle">☰</label>
+        <input type="checkbox" id="toggle">
+
+        <div class="c-navigationHeader__contenu">
+            <div class="c-navigationHeader__logoBox">
+                <div class="c-navigationHeader__logoContainer">
+                    <img src="assets/img/logo.svg" alt="logo menu" class="c-navigationHeader__logoImg">
+                </div>
             </div>
-        </div>
-        <div class="c-navigationHeader__categorie">
-            <ul class="c-navigationHeader__liste">
-                <li class="c-navigationHeader__lien">
-                    <a href="#">NOUVEAUTES</a>
-                </li>
-                <li class="c-navigationHeader__lien">
-                    <a href="#">BEST-SELLERS</a>
-                </li>
-                <li class="c-navigationHeader__lien">
-                    <a href="#">COLLECTION</a>
-                </li>
-                <li class="c-navigationHeader__lien">
-                    <a href="#">PRODUITS</a>
-                </li>
-                <li class="c-navigationHeader__lien">
-                    <a href="#">NOS SERVICES</a>
-                </li>
-            </ul>
-        </div>
-        <div class="c-navigation__icone">
-            <ul class="c-navigationHeader__interaction">
-                <img src="assets/img/panier.svg" alt="logo panier" class="c-panierLogo">
-                <img src="assets/img/compte.svg" alt="logo compte" class="c-compteLogo">
-            </ul>
+            <div class="c-navigationHeader__categorie">
+                <ul class="c-navigationHeader__liste">
+                    <li class="c-navigationHeader__lien">
+                        <a href="#">NOUVEAUTES</a>
+                    </li>
+                    <li class="c-navigationHeader__lien">
+                        <a href="#">BEST-SELLERS</a>
+                    </li>
+                    <li class="c-navigationHeader__lien">
+                        <a href="#">COLLECTION</a>
+                    </li>
+                    <li class="c-navigationHeader__lien">
+                        <a href="#">PRODUITS</a>
+                    </li>
+                    <li class="c-navigationHeader__lien">
+                        <a href="#">NOS SERVICES</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="c-navigation__icone">
+                <ul class="c-navigationHeader__interaction">
+                    <img src="assets/img/panier.svg" alt="logo panier" class="c-panierLogo">
+                    <img src="assets/img/compte.svg" alt="logo compte" class="c-compteLogo">
+                    <img src="assets/img/burger.svg" alt="icone menu burger" class="btn-toggle-container">
+                </ul>
+            </div>
         </div>
     </nav>
    
 </body>
-
 </html>
